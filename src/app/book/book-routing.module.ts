@@ -12,7 +12,7 @@ const routes: Routes = [
     component: BookListComponent,
   },
   {
-    path: 'detail',
+    path: 'detail/:id',
     component: BookDetailComponent,
   },
   {

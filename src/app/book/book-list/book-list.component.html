@@ -20,7 +20,7 @@
       <th scope="col">Tên sách</th>
       <th scope="col">Tác giả</th>
       <th scope="col">Mô tả</th>
-      <th scope="col" colspan="2">Action</th>
+      <th colspan="3">Action</th>
     </tr>
     </thead>
     <tbody>
@@ -29,7 +29,8 @@
       <td>{{book.title}}</td>
       <td>{{book.author}}</td>
       <td>{{book.description}}</td>
-      <td><a routerLink="/books/edit/{{book.id}}" class="btn btn-info">Edit</a></td>
+      <td><a routerLink="/books/edit/{{book.id}}" class="btn btn-success">Edit</a></td>
+      <td><a routerLink="/books/detail/{{book.id}}" class="btn btn-info">Detail</a></td>
       <td><button (click)="delete(book.id)" class="btn btn-danger">Delete</button></td>
 
     </tbody>
